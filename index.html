@@ -3,62 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  
 <title>GoodWe Pakistan — Aftersales</title>
 <style>
-  html, body { margin: 0; padding: 0; height: 100%; background: #0B0B0B; }
-  iframe { position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
-  #fallback {
-    display: none;
-    position: fixed; inset: 0;
+  html, body {
+    margin: 0; padding: 0; height: 100%;
     background: #0B0B0B;
-    color: #F5F5F5;
+    display: flex; align-items: center; justify-content: center;
     font-family: -apple-system, "Segoe UI", Arial, sans-serif;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
+    color: #F5F5F5;
   }
-  #fallback img { width: 140px; margin-bottom: 24px; }
-  #fallback h1 { font-size: 18px; margin: 0 0 10px 0; }
-  #fallback p { font-size: 14px; color: #AAAAAA; margin: 0 0 24px 0; max-width: 380px; }
-  #fallback a {
-    display: inline-block;
-    background: #E2231A;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 12px 28px;
-    border-radius: 8px;
-  }
+  p { font-size: 14px; color: #AAAAAA; }
 </style>
 </head>
 <body>
 
-<iframe id="app-frame" src="https://script.google.com/macros/s/AKfycbxbKx_h-PASsiXYdzkRiApE_xd9lj79i-MgZEnz_JCgt7U4KH4op4D_7ZKFw8bSNAzn/exec" title="GoodWe Pakistan Aftersales" allow="clipboard-write"></iframe>
-
-<div id="fallback">
-  <h1>GoodWe Pakistan — Aftersales</h1>
-  <p>This page couldn't load inline. Open it directly instead — everything works the same way.</p>
-  <a id="fallback-link" href="https://script.google.com/macros/s/AKfycbxbKx_h-PASsiXYdzkRiApE_xd9lj79i-MgZEnz_JCgt7U4KH4op4D_7ZKFw8bSNAzn/exec" target="_top">Open Aftersales Portal</a>
-</div>
+<p>Redirecting to the Aftersales Portal…</p>
 
 <script>
-  // If the iframe fails to load within a few seconds (blocked framing,
-  // network issue, etc.), show the fallback direct link instead of a
-  // permanently blank page.
-  var loaded = false;
-  var frame = document.getElementById('app-frame');
-  frame.addEventListener('load', function () { loaded = true; });
-
-  setTimeout(function () {
-    if (!loaded) {
-      document.getElementById('fallback').style.display = 'flex';
-    }
-  }, 4000);
+  window.top.location.href = "https://script.google.com/macros/s/AKfycbxbKx_h-PASsiXYdzkRiApE_xd9lj79i-MgZEnz_JCgt7U4KH4op4D_7ZKFw8bSNAzn/exec";
 </script>
 
 </body>
