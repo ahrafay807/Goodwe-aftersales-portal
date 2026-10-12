@@ -3,61 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>GoodWe Pakistan — Aftersales</title>
+<meta name="robots" content="noindex, nofollow">
+<title>GoodWe Pakistan — Admin Command Center</title>
 <style>
-  html, body { margin: 0; padding: 0; height: 100%; background: #0B0B0B; }
+  html, body { margin: 0; padding: 0; height: 100%; background: #12161F; }
   iframe { position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
   #fallback {
-    display: none;
-    position: fixed; inset: 0;
-    background: #0B0B0B;
-    color: #F5F5F5;
+    display: none; position: fixed; inset: 0; background: #12161F; color: #F5F5F5;
     font-family: -apple-system, "Segoe UI", Arial, sans-serif;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
+    flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px;
   }
-  #fallback img { width: 140px; margin-bottom: 24px; }
-  #fallback h1 { font-size: 18px; margin: 0 0 10px 0; }
-  #fallback p { font-size: 14px; color: #AAAAAA; margin: 0 0 24px 0; max-width: 380px; }
-  #fallback a {
-    display: inline-block;
-    background: #E2231A;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 12px 28px;
-    border-radius: 8px;
-  }
+  #fallback .logo { width: 56px; height: 56px; border-radius: 12px; background: #C8102E; color: #fff; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px; }
+  #fallback h1 { font-size: 18px; margin: 0 0 10px; }
+  #fallback p { font-size: 14px; color: #AAAAAA; margin: 0 0 24px; max-width: 380px; }
+  #direct { position: fixed; right: 12px; bottom: 12px; z-index: 5; background: rgba(18,22,31,.85); color: #fff;
+    font: 600 12px -apple-system, "Segoe UI", Arial, sans-serif; text-decoration: none; padding: 8px 12px; border-radius: 16px;
+    opacity: .35; transition: opacity .2s; }
+  #direct:hover, #direct:focus { opacity: 1; }
+  #fallback a { display: inline-block; background: #C8102E; color: #fff; text-decoration: none; font-weight: 700;
+    font-size: 14px; padding: 12px 28px; border-radius: 8px; }
 </style>
 </head>
 <body>
 
-<iframe id="app-frame" src="https://script.google.com/macros/s/AKfycbxbKx_h-PASsiXYdzkRiApE_xd9lj79i-MgZEnz_JCgt7U4KH4op4D_7ZKFw8bSNAzn/exec" title="GoodWe Pakistan Aftersales" allow="clipboard-write"></iframe>
+<iframe id="app-frame"
+  src="https://script.google.com/macros/s/AKfycbyJeBnS3ighpeMSruJbrq_E7gOKKVSUEJjMGArg6dOMitlNmvygQ3g_pAiLTVHit0PqZA/exec"
+  title="GoodWe Admin Command Center" allow="clipboard-write"></iframe>
+
+<a id="direct" href="https://script.google.com/macros/s/AKfycbyJeBnS3ighpeMSruJbrq_E7gOKKVSUEJjMGArg6dOMitlNmvygQ3g_pAiLTVHit0PqZA/exec" target="_top">Open directly ↗</a>
 
 <div id="fallback">
-  <h1>GoodWe Pakistan — Aftersales</h1>
+  <div class="logo">GW</div>
+  <h1>GoodWe Pakistan — Admin Command Center</h1>
   <p>This page couldn't load inline. Open it directly instead — everything works the same way.</p>
-  <a id="fallback-link" href="https://script.google.com/macros/s/AKfycbxbKx_h-PASsiXYdzkRiApE_xd9lj79i-MgZEnz_JCgt7U4KH4op4D_7ZKFw8bSNAzn/exec" target="_top">Open Aftersales Portal</a>
+  <a href="https://script.google.com/macros/s/AKfycbyJeBnS3ighpeMSruJbrq_E7gOKKVSUEJjMGArg6dOMitlNmvygQ3g_pAiLTVHit0PqZA/exec" target="_top">Open Command Center</a>
 </div>
 
 <script>
-  // If the iframe fails to load within a few seconds (blocked framing,
-  // network issue, etc.), show the fallback direct link instead of a
-  // permanently blank page.
+  // Show a direct link if the app can't load inside the frame within a few seconds.
   var loaded = false;
-  var frame = document.getElementById('app-frame');
-  frame.addEventListener('load', function () { loaded = true; });
-
-  setTimeout(function () {
-    if (!loaded) {
-      document.getElementById('fallback').style.display = 'flex';
-    }
-  }, 4000);
+  document.getElementById('app-frame').addEventListener('load', function () { loaded = true; });
+  setTimeout(function () { if (!loaded) document.getElementById('fallback').style.display = 'flex'; }, 6000);
 </script>
 
 </body>
